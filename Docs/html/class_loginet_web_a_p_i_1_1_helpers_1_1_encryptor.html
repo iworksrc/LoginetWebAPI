@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LoginetWebAPI: Класс LoginetWebAPI.Helpers.Encryptor</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="2017-07-18_16-47-41.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LoginetWebAPI
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">Тестовое задание</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_loginet_web_a_p_i.html">LoginetWebAPI</a></li><li class="navelem"><a class="el" href="namespace_loginet_web_a_p_i_1_1_helpers.html">Helpers</a></li><li class="navelem"><a class="el" href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor.html">Encryptor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс LoginetWebAPI.Helpers.Encryptor</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Шифворальщик/Дешифровальщик по стандарту <b>Advanced Encryption Standard (AES)</b>  
+ <a href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor.html#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aeca73cd71854a0b2900b336328ab9481"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor.html#aeca73cd71854a0b2900b336328ab9481">Encryptor</a> ()</td></tr>
+<tr class="memdesc:aeca73cd71854a0b2900b336328ab9481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует новый экземпляр <a class="el" href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor.html" title="Шифворальщик/Дешифровальщик по стандарту Advanced Encryption Standard (AES) ">Encryptor</a> класса.<br />
+ При создании экземпляра класса будет произведена попытка прочитать <b>ключ</b> и <b>вектор</b> из файла.<br />
+ В случае провала будут сгенерированы новые <b>ключ</b> и <b>вектор</b> и будет произведена попытка записать их в файл,<br />
+ В случае провала сохранения ключей в файл шифрование/дешифрование производиться не будет,<br />
+ соответствующие методы будут возвращать <em>null</em>  <a href="#aeca73cd71854a0b2900b336328ab9481">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeca73cd71854a0b2900b336328ab9481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cc6e219e06c6b7afa690871eb3db1e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor.html#ae5cc6e219e06c6b7afa690871eb3db1e">Encrypt</a> (string plaintext)</td></tr>
+<tr class="memdesc:ae5cc6e219e06c6b7afa690871eb3db1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шифрует переданную строку  <a href="#ae5cc6e219e06c6b7afa690871eb3db1e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5cc6e219e06c6b7afa690871eb3db1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87770242a65cdcc9153ee19482ee570e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor.html#a87770242a65cdcc9153ee19482ee570e">Decrypt</a> (string chiped)</td></tr>
+<tr class="memdesc:a87770242a65cdcc9153ee19482ee570e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дешифрует переданную строку  <a href="#a87770242a65cdcc9153ee19482ee570e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a87770242a65cdcc9153ee19482ee570e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Шифворальщик/Дешифровальщик по стандарту <b>Advanced Encryption Standard (AES)</b> </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aeca73cd71854a0b2900b336328ab9481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca73cd71854a0b2900b336328ab9481">&#9670;&nbsp;</a></span>Encryptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LoginetWebAPI.Helpers.Encryptor.Encryptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализирует новый экземпляр <a class="el" href="class_loginet_web_a_p_i_1_1_helpers_1_1_encryptor.html" title="Шифворальщик/Дешифровальщик по стандарту Advanced Encryption Standard (AES) ">Encryptor</a> класса.<br />
+ При создании экземпляра класса будет произведена попытка прочитать <b>ключ</b> и <b>вектор</b> из файла.<br />
+ В случае провала будут сгенерированы новые <b>ключ</b> и <b>вектор</b> и будет произведена попытка записать их в файл,<br />
+ В случае провала сохранения ключей в файл шифрование/дешифрование производиться не будет,<br />
+ соответствующие методы будут возвращать <em>null</em> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a87770242a65cdcc9153ee19482ee570e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87770242a65cdcc9153ee19482ee570e">&#9670;&nbsp;</a></span>Decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string LoginetWebAPI.Helpers.Encryptor.Decrypt </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>chiped</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дешифрует переданную строку </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chiped</td><td>зашифрованный текст</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>В случае успешно прочитанных/сгенерированных/сохранённых <b>Ключа</b> и <b>Вектора</b> - открытый текст, иначе <em>null</em> </dd></dl>
+
+</div>
+</div>
+<a id="ae5cc6e219e06c6b7afa690871eb3db1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cc6e219e06c6b7afa690871eb3db1e">&#9670;&nbsp;</a></span>Encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string LoginetWebAPI.Helpers.Encryptor.Encrypt </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>plaintext</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шифрует переданную строку </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>открытый текст</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>В случае успешно прочитанных/сгенерированных/сохранённых <b>Ключа</b> и <b>Вектора</b> - зашифрованный текст, иначе <em>null</em> </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>C:/Users/voltron/Documents/Visual Studio 2017/Projects/LoginetWebAPI/LoginetWebAPI/Helpers/Encryptor.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
